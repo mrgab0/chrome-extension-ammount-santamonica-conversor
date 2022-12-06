@@ -1,0 +1,49 @@
+{
+
+    "manifest_version": 2,    
+    "version" : "0.0.1",
+    "name": "santamonica converter",
+    "description": "extension para convertir automaticamente el restante de facturacion del pos a bolivares",
+    "browser_action": {
+        "default_title": "santamonica converter",
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+        
+    },
+    "commands": {
+        "_execute_browser_action": {
+           "suggested_key": {
+              "chromeos": "Alt+C",
+              "default": "Alt+C",
+              "linux": "Alt+C",
+              "mac": "Alt+C",
+              "windows": "Alt+C"
+           }
+        }
+     },
+    
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.google-analytics.com; object-src 'self'",
+    "web_accessible_resources": ["calculadora.js"],
+    "icons" : {
+        "16" : "icon16.png", 
+        "48" : "icon48.png", 
+        "128" : "icon128.png" 
+        },
+        "background":{
+
+            "service_worker": "background.js"
+        },
+        "permissions": ["storage", "activeTab", "scripting"],
+
+        "options_page": "options.html",
+        "offline_enabled": true,
+        
+            "sandbox": {
+
+            "pages": ["popup.html"]
+                    
+                        }
+    
+
+
+}
