@@ -104,7 +104,7 @@
             <h4 class="my-0 fw-success">  <img src="icon48.png" class="img-thumbnail">Conversor de Restante POS Santamonica</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title" ><form >Ingresa el Restante En: </form><small class="text-muted fw-light">$</small></h1>
+            <h1 class="card-title pricing-card-title" ><form > </form><small class="text-muted fw-light"></small></h1>
             <ul class="list-unstyled mt-3 mb-4">
               
 
@@ -122,6 +122,7 @@
                  <table cellpadding="0" cellspacing="10" style="margin-left:0px;" border="0">
                  <form></form>
                  <tbody><tr>
+                  <h1 class="card-title pricing-card-title" ><form >Ingresa el Restante En: Dolares</form><small class="text-muted fw-light"></small></h1>
                  <td style="padding:4px;" colspan="2">
                  <span style="font-size:12px;line-height: 11px; align:center;color:green;font-weight:bold;"><br> <br>  </span><input size="36" type="text" id="fecha" value="" style="width:185px;font-size:11px;font-weight:bold;align:center;color:white">
                  </td>
@@ -130,37 +131,37 @@
                  <td width="100" align="right">
                  <select id="select" onchange="calculate();">
                  
-                    <option style="font-size:12px;line-height: 11px; " value="3">Dólares a Bs</option>  
-                    <option style="font-size:12px;line-height: 11px; " value="1">Pesos a Dolares</option>
+                    <option style="font-size:12px;line-height: 25px; " value="3">Dólares a Bs</option>  
+                    <option style="font-size:12px;line-height: 25px; " value="1">Pesos a Dolares</option>
                  
                  
                  </select>
                  </td>
                  <td align="left">
-                 <input size="7" type="text" id="amount" onkeyup="calculate();" value="1" style="height:23px; border: 2px solid #ccc;">
+                 <input size="18" type="text" id="amount" onkeyup="calculate();" value="1" style="font-weight:normal;text-align:center;font-size:20px;" placeholder="Introduce Un Restante">
                  </td>
                  </tr>
                  </tbody></table>
                  <table table="" cellpadding="0" cellspacing="10" style="margin-left:0px;" border="0">
                  <tbody><tr>
                  <td align="right">
-                 <b><input size="10" type="text" id="resulttitle" value="" style="font-weight:normal;text-align:right;font-size:10px"></input></b>
+                 <input size="18" type="text" id="resulttitle" value="" style="font-weight:normal;text-align:right;font-size:25px"></input>
                  </td>
                  <td align="left">
-                 <input size="18" type="text" id="result" value="" style="font-weight:bold;font-size:10px">
+                 <input size="18" type="text" id="result" value="" style="font-weight:bold;font-size:25px">
                  </td>
                  </tr>
                  <tr>
                  <td align="right">
-                 <input size="10" type="text" id="result2title" value="" style="font-weight:normal;text-align:right;font-size:10px">
+                 <input size="18" type="hidden" id="result2title" value="" style="font-weight:normal;text-align:right;font-size:25px">
                  </td>
                  <td align="left">
-                 <input size="18" type="text" id="result2" value="" style="font-weight:bold;font-size:10px">
+                 <input size="18" type="hidden" id="result2" value="" style="font-weight:bold;font-size:25px">
                  </td>
                  </tr>
                  <tr>
                  <td align="right">
-                 <input size="10" type="text" id="result3itle" value="" style="font-weight:normal;text-align:right;font-size:10px">
+                 <input size="18" type="hidden" id="result3itle" value="" style="font-weight:normal;text-align:right;font-size:25px">
                  </td>
                  <td align="left">
                  
@@ -169,7 +170,7 @@
                  <tr>
                 
                  <td align="left">
-                 <input size="18" type="text" id="result4" value="" style="font-weight:bold;font-size:10px">
+                 <input size="18" type="hidden" id="result4" value="" style="font-weight:bold;font-size:10px">
                  </td>
                  </tr>
                  
@@ -186,11 +187,18 @@
 
 
 
-              <li>copia esto y pegalo para facturar en bolivares</li>
+              <li style="font-weight:normal;text-align:center;font-size:11px">copia esto y pegalo para facturar en bolivares</li>
             </ul>
             <script src="calculadora.js"></script>
-    <script src="popup_script.js"></script>
+            <script src="popup_script.js"></script>
+            <!--
+
+
+              cuando se pueda revivir el boton
             <button type="button" class="w-100 btn  btn-success" id="copiador" onclick="copiarAlPortapapeles()">    Copiar (aun no funciona)   </button>
+
+            -->
+            
           </div>
         </div>
       </div>

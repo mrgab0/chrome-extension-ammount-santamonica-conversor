@@ -74,7 +74,7 @@
    
    
                  if (select.value === "1") {
-                     resulttitle.value       = 'Pesos:';
+                     resulttitle.value       = 'Dolares:';
                      //result2title.value      = 'Venta(E):';
                      result.value = '$. ' + pesocompratotal;
                      //result2.value = 'BsF. ' + pesoventatotal;
@@ -96,12 +96,12 @@
                  if (select.value === "3") {
                      resulttitle.value       = 'restante:';
                      //result2title.value      = 'Venezuela:';
-                     result.value = '$. ' + dolarcompratotal;
+                     result.value = 'Bs. ' + dolarcompratotal;
                      //result2.value = 'BsF. ' + dolarventatotal;
                      //result3itle.value       = 'Colombia:';
                      //result4title.value      = 'DICOM:';
-                     result3.value = '$. ' + dolarcompratotal2;
-                     result4.value = '$. ' + dolarventatotal2;
+                     result3.value = 'Bs. ' + dolarcompratotal2;
+                     result4.value = 'Bs. ' + dolarventatotal2;
                  }
                  if (select.value === "4") {
                      resulttitle.value       = 'restante:';
@@ -128,7 +128,7 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
   let frames = _____WB$wombat$assign$function_____("frames");
   let opener = _____WB$wombat$assign$function_____("opener");
 
-var preciocucuta={"COL":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"BSF":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"COL2":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"BSF2":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"_timestamp":{"fecha":"","fecha_corta":"HOY, 2017"},"USD":{"cucuta":11.54,"venezuela":11.54,"colombia":11.54,"dicom":11.54},"EUR":{"cucuta":5450,"venezuela":4671,"colombia":3270,"dicom":3733}}
+var preciocucuta={"COL":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"BSF":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"COL2":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"BSF2":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"_timestamp":{"fecha":"","fecha_corta":"HOY, 2017"},"USD":{"cucuta":12.66,"venezuela":12.66,"colombia":12.66,"dicom":12.66},"EUR":{"cucuta":5450,"venezuela":4671,"colombia":3270,"dicom":3733}}
 
 }
 /*

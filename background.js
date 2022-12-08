@@ -12,7 +12,7 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
   let frames = _____WB$wombat$assign$function_____("frames");
   let opener = _____WB$wombat$assign$function_____("opener");
 
-var preciocucuta={"COL":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"BSF":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"COL2":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"BSF2":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"_timestamp":{"fecha":"","fecha_corta":"HOY, 2017"},"USD":{"cucuta":11.54,"venezuela":11.54,"colombia":11.54,"dicom":11.54},"EUR":{"cucuta":5450,"venezuela":4671,"colombia":3270,"dicom":3733}}
+var preciocucuta={"COL":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"BSF":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"COL2":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"BSF2":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"_timestamp":{"fecha":"","fecha_corta":"HOY, 2017"},"USD":{"cucuta":12.66,"venezuela":12.66,"colombia":12.66,"dicom":12.66},"EUR":{"cucuta":5450,"venezuela":4671,"colombia":3270,"dicom":3733}}
 
 }
 /*
@@ -110,7 +110,7 @@ playback timings (ms):
    
    
                  if (select.value === "1") {
-                     resulttitle.value       = 'Pesos:';
+                     resulttitle.value       = ' a Pesos:';
                      //result2title.value      = 'Venta(E):';
                      result.value = 'BsF. ' + pesocompratotal;
                      //result2.value = 'BsF. ' + pesoventatotal;
@@ -130,7 +130,7 @@ playback timings (ms):
                      result4.value = 'COP. ' + bolivarventatotal2;
                  }
                  if (select.value === "3") {
-                     resulttitle.value       = 'restante:';
+                     resulttitle.value       = ' a restante:';
                      //result2title.value      = 'Venezuela:';
                      result.value = 'BsF. ' + dolarcompratotal;
                      //result2.value = 'BsF. ' + dolarventatotal;
@@ -164,7 +164,7 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
   let frames = _____WB$wombat$assign$function_____("frames");
   let opener = _____WB$wombat$assign$function_____("opener");
 
-var preciocucuta={"COL":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"BSF":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"COL2":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"BSF2":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"_timestamp":{"fecha":"","fecha_corta":"HOY, 2017"},"USD":{"cucuta":11.54,"venezuela":11.54,"colombia":11.54,"dicom":11.54},"EUR":{"cucuta":5450,"venezuela":4671,"colombia":3270,"dicom":3733}}
+var preciocucuta={"COL":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"BSF":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"COL2":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"BSF2":{"efectivo":0.00,"transfer":0.00,"compra":5000,"venta":5000},"_timestamp":{"fecha":"","fecha_corta":"HOY, 2017"},"USD":{"cucuta":12.66,"venezuela":12.66,"colombia":12.66,"dicom":12.66},"EUR":{"cucuta":5450,"venezuela":4671,"colombia":3270,"dicom":3733}}
 
 }
 /*
