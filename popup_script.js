@@ -74,14 +74,14 @@
    
    
                  if (select.value === "1") {
-                     resulttitle.value       = 'Dolares:';
+                     resulttitle.value       = 'Dolares: $. ';
                      //result2title.value      = 'Venta(E):';
-                     result.value = '$. ' + pesocompratotal;
+                     result.value =  pesocompratotal;
                      //result2.value = 'BsF. ' + pesoventatotal;
                      //result3itle.value       = 'Compra(T):';
                      result4title.value      = 'Venta(T):';
-                     result3.value = '$. ' + pesocompratotal2;
-                     result4.value = '$. ' + pesoventatotal2;
+                     result3.value =  pesocompratotal2;
+                     result4.value =  pesoventatotal2;
                  }
                  if (select.value === "2") {
                      resulttitle.value       = 'Compra(E):';
@@ -94,14 +94,14 @@
                      result4.value = 'COP. ' + bolivarventatotal2;
                  }
                  if (select.value === "3") {
-                     resulttitle.value       = 'restante:';
+                     resulttitle.value       = 'restante: Bs. ';
                      //result2title.value      = 'Venezuela:';
-                     result.value = 'Bs. ' + dolarcompratotal;
+                     result.value =  dolarcompratotal;
                      //result2.value = 'BsF. ' + dolarventatotal;
                      //result3itle.value       = 'Colombia:';
                      //result4title.value      = 'DICOM:';
-                     result3.value = 'Bs. ' + dolarcompratotal2;
-                     result4.value = 'Bs. ' + dolarventatotal2;
+                     result3.value =  dolarcompratotal2;
+                     result4.value =  dolarventatotal2;
                  }
                  if (select.value === "4") {
                      resulttitle.value       = 'restante:';
@@ -157,13 +157,24 @@ var boton = document.getElementById("copiador");
 boton.addEventListener("click", copiarAlPortapapeles, false);
 
 function copiarAlPortapapeles() {
-  var enlace = document.getElementById("resulttitle");
-  var inputFalso = document.createElement("input");
-  inputFalso.setAttribute("value", enlace.innerHTML);
-  document.body.appendChild(inputFalso);
-  inputFalso.select();
+  var enlace = document.getElementById("result");
+  //var inputFalso = document.createElement("input");
+  //inputFalso.setAttribute("value", enlace.innerHTML);
+  //document.body.appendChild(inputFalso);
+  //inputFalso.select();
+  enlace.select();
   document.execCommand("copy");
-  document.body.removeChild(inputFalso);
-  var myToolTip = document.getElementById("copiador");
-  myToolTip.innerHTML = "cuando esto funcione sera muy cool";
+  //document.body.removeChild(enlace);
+  function botonArriba(){
+
+    $('[data-toggle="tooltip"]').tooltip('show')
+    var myToolTip = document.getElementById("copiador");
+
+  }
+  
+  botonArriba()
+
+  
+  
+  myToolTip.innerHTML = "cuando esto funcione sera muy cool"; 
 }

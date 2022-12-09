@@ -145,7 +145,7 @@
                  <table table="" cellpadding="0" cellspacing="10" style="margin-left:0px;" border="0">
                  <tbody><tr>
                  <td align="right">
-                 <input size="18" type="text" id="resulttitle" value="" style="font-weight:normal;text-align:right;font-size:25px"></input>
+                 <input size="18" type="text" id="resulttitle" value="" style="font-weight:normal;text-align:right;font-size:25px">
                  </td>
                  <td align="left">
                  <input size="18" type="text" id="result" value="" style="font-weight:bold;font-size:25px">
@@ -195,9 +195,12 @@
 
 
               cuando se pueda revivir el boton
-            <button type="button" class="w-100 btn  btn-success" id="copiador" onclick="copiarAlPortapapeles()">    Copiar (aun no funciona)   </button>
+            
 
             -->
+            
+            <button type="button" class="w-100 btn  btn-success" id="copiador" onclick="copiarAlPortapapeles()"  data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!" onkeyup="botonArriba()">Copiar</button>
+            
             
           </div>
         </div>
